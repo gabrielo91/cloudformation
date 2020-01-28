@@ -1,0 +1,12 @@
+---
+Description: 'S3: simple public s3 service'
+
+Resources: 
+  S3:
+    Type: AWS::S3::Bucket
+    Properties: 
+      AccessControl: PublicRead
+      BucketName: cloudformation-test-s3-bucket
+      Tags:
+        - Key: name
+          Value: s3-test-bucket-gabo
